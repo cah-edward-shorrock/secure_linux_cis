@@ -84,7 +84,8 @@ class secure_linux_cis::debian9 (
 ) {
 
   # Set default path for execs if not otherwise specified
-  Exec { path => '/bin/:/sbin/:/usr/bin/:/usr/sbin/' }
+  Exec { path         => '/bin/:/sbin/:/usr/bin/:/usr/sbin/' }
+  Service { provider  => 'systemd'}
 
 
   # Debian 1.1.1.1
@@ -122,7 +123,7 @@ class secure_linux_cis::debian9 (
 
   # TODO CIS 1.2.1 is not scored, and quite difficult to implement on Debian
   # class { '::secure_linux_cis::redhat7::cis_1_2_1':
-  #   repolist => $repolist,
+  #   repolist        => $repolist,
   # }
 
   # Debian1_2_2
@@ -284,7 +285,7 @@ class secure_linux_cis::debian9 (
   # include ::secure_linux_cis::redhat7::cis_3_7
 
   # class { '::secure_linux_cis::redhat7::cis_4_1_1_1':
-  #   max_log_file => $max_log_file,
+  #   max_log_file    => $max_log_file,
   # }
 
   include ::secure_linux_cis::redhat7::cis_4_1_1_2
@@ -312,7 +313,7 @@ class secure_linux_cis::debian9 (
   }
 
   # class { '::secure_linux_cis::redhat7::cis_4_2_1_2':
-  #   logging => $logging,
+  #   logging         => $logging,
   # }
 
   class { '::secure_linux_cis::redhat7::cis_4_2_1_3':
@@ -334,7 +335,7 @@ class secure_linux_cis::debian9 (
   }
 
   # class { '::secure_linux_cis::redhat7::cis_4_2_2_2':
-  #   logging => $logging,
+  #   logging         => $logging,
   # }
 
   class { '::secure_linux_cis::redhat7::cis_4_2_2_3':
@@ -342,8 +343,8 @@ class secure_linux_cis::debian9 (
   }
 
   # class { '::secure_linux_cis::redhat7::cis_4_2_2_4':
-  #   logging      => $logging,
-  #   logging_host => $logging_host,
+  #   logging         => $logging,
+  #   logging_host    => $logging_host,
   # }
 
   # class { '::secure_linux_cis::redhat7::cis_4_2_2_5':
