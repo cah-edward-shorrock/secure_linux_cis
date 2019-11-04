@@ -1,0 +1,18 @@
+include_rules:
+  - ensure_tmp_is_configured
+  - ensure_ipv6_default_deny_firewall_policy
+  - ensure_ipv6_loopback_traffic_is_configured
+  - ensure_ipv6_outbound_and_established_connections_are_configured
+  - ensure_ipv6_firewall_rules_exist_for_all_open_ports
+  - disable_ipv6
+  - configure_system_accounting
+  - ensure_events_that_modify_user_group_information_are_collected
+  - ensure_events_that_modify_the_system_s_network_environment_are_collected
+  - ensure_login_and_logout_events_are_collected_scored_controls_are_collected
+  - ensure_permissions_on_ssh_private_host_key_files_are_configured
+  - ensure_permissions_on_ssh_public_host_key_files_are_configured
+  - ensure_ssh_loglevel_is_appropriate
+  - ensure_only_strong_ciphers_are_used
+  - ensure_only_strong_mac_algorithms_are_used
+  - ensure_that_strong_key_exchange_algorithms_are_used
+  - ensure_root_login_is_restricted_to_system_console

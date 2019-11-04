@@ -1,0 +1,27 @@
+include_rules:
+  - ensure_mounting_of_cramfs_filesystems_is_disabled
+  - ensure_mounting_of_squashfs_filesystems_is_disabled
+  - ensure_mounting_of_udf_filesystems_is_disabled
+  - ensure_noexec_option_set_on_tmp_partition
+  - ensure_nodev_option_set_on_removable_media_partitions
+  - ensure_nosuid_option_set_on_removable_media_partitions
+  - ensure_noexec_option_set_on_removable_media_partitions
+  - ensure_package_manager_repositories_are_configured
+  - ensure_gpgcheck_is_globally_activated
+  - ensure_gpg_keys_are_configured
+  - disable_the_rhnsd_daemon
+  - ensure_bootloader_password_is_set
+  - ensure_selinux_is_not_disabled_in_bootloader_configuration
+  - ensure_setroubleshoot_is_not_installed
+  - ensure_the_mcs_translation_service_mcstrans_is_not_installed
+  - ensure_selinux_is_installed
+  - ensure_permissions_on_etc_issue_net_are_configured
+  - ensure_gdm_login_banner_is_configured
+  - ensure_imap_and_pop3_server_is_not_enabled
+  - ensure_wireless_interfaces_are_disabled
+  - configure_system_accounting
+  - ensure_events_that_modify_user_group_information_are_collected
+  - ensure_events_that_modify_the_system_s_network_environment_are_collected
+  - ensure_events_that_modify_the_system_s_mandatory_access_controls_are_collected
+  - ensure_login_and_logout_events_are_collected
+  - ensure_root_login_is_restricted_to_system_console

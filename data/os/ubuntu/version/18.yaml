@@ -1,0 +1,2 @@
+include_rules:
+  - ensure_selinux_or_apparmor_are_installed

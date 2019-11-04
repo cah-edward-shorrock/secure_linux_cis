@@ -1,0 +1,21 @@
+include_rules:
+  - ensure_mounting_of_freevxfs_filesystems_is_disabled
+  - ensure_mounting_of_jffs2_filesystems_is_disabled
+  - ensure_mounting_of_fat_filesystems_is_disabled
+  - ensure_separate_partition_exists_for_tmp
+  - ensure_interactive_boot_is_not_enabled
+  - ensure_xd_nx_support_is_enabled
+  - ensure_chargen_services_are_not_enabled
+  - ensure_daytime_services_are_not_enabled
+  - ensure_discard_services_are_not_enabled
+  - ensure_echo_services_are_not_enabled
+  - ensure_time_services_are_not_enabled
+  - ensure_xinetd_is_not_enabled
+  - ensure_ipv6_redirects_are_not_accepted
+  - ensure_ipv6_is_disabled
+  - ensure_events_that_modify_the_system_s_network_environment_collected
+  - _are_collected_scored_
+  - ensure_events_that_modify_the_system_s_mandatory_access_controls_are_collected
+  - ensure_login_and_logout_events_are_collected
+  - ensure_ssh_loglevel_is_set_to_info
+  - ensure_only_approved_mac_algorithms_are_used

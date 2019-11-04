@@ -1,0 +1,9 @@
+include_rules:
+  - ensure_mounting_of_cramfs_filesystems_is_disabled
+  - ensure_mounting_of_squashfs_filesystems_is_disabled
+  - ensure_package_manager_repositories_are_configured
+  - ensure_gpg_keys_are_configured
+  - ensure_selinux_is_not_disabled_in_bootloader_configuration
+  - ensure_gdm_login_banner_is_configured_scored_
+  - ensure_inetd_is_not_installed
+  - ensure_imap_and_pop3_server_is_not_installed
